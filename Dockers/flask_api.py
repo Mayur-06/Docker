@@ -15,7 +15,7 @@ from flasgger import Swagger
 app=Flask(__name__)
 Swagger(app)
 
-pickle_in = open("Dockers/classifier.pkl","rb")
+pickle_in = open("classifier.pkl","rb")
 classifier=pickle.load(pickle_in)
 
 @app.route('/')
